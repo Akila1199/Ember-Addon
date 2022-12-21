@@ -1,0 +1,14 @@
+<div class="container justify-content-center border mt-4 w-25">
+    <h3 class="text-center mt-5">Login / SignUp</h3>
+    <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    {{input required=true type="text" class="form-control" value=username}}
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        {{input required=true type="password" class="form-control" value=password}}
+    </div>
+    {{!-- {{#link-to "home" class="btn btn-primary ms-5 mb-4"}}Cancel{{/link-to}} --}}
+    <button {{action 'goToPreviousPage' }} type="submit" class="btn btn-primary ms-5 mb-4">Cancel</button>
+    <button {{action 'validateUser' }} type="submit" class="btn btn-primary ms-5 mb-4">Login</button>
+</div>

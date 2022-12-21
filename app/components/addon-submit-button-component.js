@@ -1,0 +1,1 @@
+export { default } from 'ember-submit-button-test/components/addon-submit-button-component';
